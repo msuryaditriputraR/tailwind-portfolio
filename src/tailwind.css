@@ -7,12 +7,13 @@
   --font-poppins: "Poppins", serif;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 .active-menu {
   @apply translate-y-0;
 }
-
 .blur-header {
-  @apply border-b-slate-200 bg-white;
+  @apply border-b-slate-200 bg-white dark:bg-zinc-900;
 }
 
 .active-link {

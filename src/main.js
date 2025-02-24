@@ -40,3 +40,27 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+/* ==================== THEME ===================== */
+const body = document.documentElement;
+const btnTheme = document.getElementById("theme-button");
+
+if (localStorage.getItem("darkTheme")) {
+  body.classList.add("dark");
+  btnTheme.classList.add("ri-moon-line");
+  btnTheme.classList.remove("ri-sun-line");
+}
+
+btnTheme.addEventListener("click", () => {
+  if (body.classList.contains("dark")) {
+    body.classList.remove("dark");
+    btnTheme.classList.add("ri-sun-line");
+    btnTheme.classList.remove("ri-moon-line");
+    localStorage.removeItem("darkTheme");
+  } else {
+    body.classList.add("dark");
+    btnTheme.classList.add("ri-moon-line");
+    btnTheme.classList.remove("ri-sun-line");
+    localStorage.setItem("darkTheme", true);
+  }
+});
