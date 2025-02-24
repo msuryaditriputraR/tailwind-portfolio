@@ -12,7 +12,7 @@
 .active-menu {
   @apply translate-y-0;
 }
-.blur-header {
+.bg-header {
   @apply border-b-slate-200 bg-white dark:bg-zinc-900;
 }
 

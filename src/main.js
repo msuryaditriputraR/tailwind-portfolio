@@ -10,14 +10,14 @@ if (menuButton && closeButton && menu) {
   );
 }
 
-/* ==================== BLUR HEADER ===================== */
-const blurHeader = () => {
+/* ==================== BACKGROUND HEADER ===================== */
+const bgHeader = () => {
   const header = document.getElementById("header");
 
-  header.classList[this.scrollY >= 50 ? "add" : "remove"]("blur-header");
+  header.classList[this.scrollY >= 50 ? "add" : "remove"]("bg-header");
 };
 
-window.addEventListener("scroll", blurHeader);
+window.addEventListener("scroll", bgHeader);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll("section[id]");
