@@ -10,3 +10,7 @@
 .active-menu {
   @apply translate-y-0;
 }
+
+.blur-header {
+  @apply border-b-slate-200 bg-white;
+}

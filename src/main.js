@@ -9,3 +9,12 @@ if (menuButton && closeButton && menu) {
     menu.classList.remove("active-menu"),
   );
 }
+
+/* ==================== BLUR HEADER ===================== */
+const blurHeader = () => {
+  const header = document.getElementById("header");
+
+  header.classList[this.scrollY >= 50 ? "add" : "remove"]("blur-header");
+};
+
+window.addEventListener("scroll", blurHeader);
