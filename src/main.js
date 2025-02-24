@@ -18,3 +18,25 @@ const blurHeader = () => {
 };
 
 window.addEventListener("scroll", blurHeader);
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll("section[id]");
+
+function scrollActive() {
+  const scrollY = window.scrollY;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 58;
+    const sectionId = current.getAttribute("id");
+    const sectionMenu = document.querySelector(`#menu a[href*=${sectionId}]`);
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionMenu.classList.add("active-link");
+    } else {
+      sectionMenu.classList.remove("active-link");
+    }
+  });
+}
+
+window.addEventListener("scroll", scrollActive);
