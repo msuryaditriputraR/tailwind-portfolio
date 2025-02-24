@@ -1,66 +1,66 @@
 /* ==================== TOGGLE MENU ===================== */
-const menuButton = document.getElementById("menu-button"),
-  closeButton = document.getElementById("close-button"),
-  menu = document.getElementById("menu");
+// const menuButton = document.getElementById("menu-button"),
+//   closeButton = document.getElementById("close-button"),
+//   menu = document.getElementById("menu");
 
-if (menuButton && closeButton && menu) {
-  menuButton.addEventListener("click", () => menu.classList.add("active-menu"));
-  closeButton.addEventListener("click", () =>
-    menu.classList.remove("active-menu"),
-  );
-}
+// if (menuButton && closeButton && menu) {
+//   menuButton.addEventListener("click", () => menu.classList.add("active-menu"));
+//   closeButton.addEventListener("click", () =>
+//     menu.classList.remove("active-menu"),
+//   );
+// }
 
 /* ==================== BACKGROUND HEADER ===================== */
-const bgHeader = () => {
-  const header = document.getElementById("header");
+// const bgHeader = () => {
+//   const header = document.getElementById("header");
 
-  header.classList[this.scrollY >= 50 ? "add" : "remove"]("bg-header");
-};
+//   header.classList[this.scrollY >= 50 ? "add" : "remove"]("bg-header");
+// };
 
-window.addEventListener("scroll", bgHeader);
+// window.addEventListener("scroll", bgHeader);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll("section[id]");
+// const sections = document.querySelectorAll("section[id]");
 
-function scrollActive() {
-  const scrollY = window.scrollY;
+// function scrollActive() {
+//   const scrollY = window.scrollY;
 
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 58;
-    const sectionId = current.getAttribute("id");
-    const sectionMenu = document.querySelector(`#menu a[href*=${sectionId}]`);
+//   sections.forEach((current) => {
+//     const sectionHeight = current.offsetHeight;
+//     const sectionTop = current.offsetTop - 58;
+//     const sectionId = current.getAttribute("id");
+//     const sectionMenu = document.querySelector(`#menu a[href*=${sectionId}]`);
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      sectionMenu.classList.add("active-link");
-    } else {
-      sectionMenu.classList.remove("active-link");
-    }
-  });
-}
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       sectionMenu.classList.add("active-link");
+//     } else {
+//       sectionMenu.classList.remove("active-link");
+//     }
+//   });
+// }
 
-window.addEventListener("scroll", scrollActive);
+// window.addEventListener("scroll", scrollActive);
 
 /* ==================== THEME ===================== */
-const body = document.documentElement;
-const btnTheme = document.getElementById("theme-button");
+// const body = document.documentElement;
+// const btnTheme = document.getElementById("theme-button");
 
-if (localStorage.getItem("darkTheme")) {
-  body.classList.add("dark");
-  btnTheme.classList.add("ri-moon-line");
-  btnTheme.classList.remove("ri-sun-line");
-}
+// if (localStorage.getItem("darkTheme")) {
+//   body.classList.add("dark");
+//   btnTheme.classList.add("ri-moon-line");
+//   btnTheme.classList.remove("ri-sun-line");
+// }
 
-btnTheme.addEventListener("click", () => {
-  if (body.classList.contains("dark")) {
-    body.classList.remove("dark");
-    btnTheme.classList.add("ri-sun-line");
-    btnTheme.classList.remove("ri-moon-line");
-    localStorage.removeItem("darkTheme");
-  } else {
-    body.classList.add("dark");
-    btnTheme.classList.add("ri-moon-line");
-    btnTheme.classList.remove("ri-sun-line");
-    localStorage.setItem("darkTheme", true);
-  }
-});
+// btnTheme.addEventListener("click", () => {
+//   if (body.classList.contains("dark")) {
+//     body.classList.remove("dark");
+//     btnTheme.classList.add("ri-sun-line");
+//     btnTheme.classList.remove("ri-moon-line");
+//     localStorage.removeItem("darkTheme");
+//   } else {
+//     body.classList.add("dark");
+//     btnTheme.classList.add("ri-moon-line");
+//     btnTheme.classList.remove("ri-sun-line");
+//     localStorage.setItem("darkTheme", true);
+//   }
+// });
