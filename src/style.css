@@ -298,6 +298,9 @@
   .h-screen {
     height: 100vh;
   }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -342,6 +345,9 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .flex-1\/2 {
+    flex: calc(1/2 * 100%);
   }
   .border-collapse {
     border-collapse: collapse;
@@ -678,6 +684,10 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .outline-none {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
   .group-hover\:translate-x-0\.5 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -781,6 +791,17 @@
       @media (hover: hover) {
         color: var(--color-sky-500);
       }
+    }
+  }
+  .focus\:border-2 {
+    &:focus {
+      border-style: var(--tw-border-style);
+      border-width: 2px;
+    }
+  }
+  .focus\:border-sky-500 {
+    &:focus {
+      border-color: var(--color-sky-500);
     }
   }
 }
