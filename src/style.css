@@ -832,6 +832,99 @@
       border-color: var(--color-sky-500);
     }
   }
+  .sm\:h-50 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 50);
+    }
+  }
+  .sm\:h-56 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 56);
+    }
+  }
+  .sm\:w-3\/4 {
+    @media (width >= 40rem) {
+      width: calc(3/4 * 100%);
+    }
+  }
+  .sm\:w-44 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 44);
+    }
+  }
+  .sm\:w-50 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 50);
+    }
+  }
+  .sm\:w-56 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 56);
+    }
+  }
+  .sm\:grid-cols-2 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:gap-4 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:gap-6 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:px-4 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:px-5 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:px-8 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:px-10 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:py-3 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:py-4 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:text-2xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .sm\:text-lg {
+    @media (width >= 40rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
 }
 .active-menu {
   --tw-translate-y: calc(var(--spacing) * 0);

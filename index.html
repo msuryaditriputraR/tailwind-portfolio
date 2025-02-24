@@ -25,21 +25,32 @@
   </head>
   <body class="font-poppins">
     <!--- ==================== HEADER ===================== -->
-    <header class="fixed z-10 flex w-screen justify-between p-4" id="header">
-      <a href="#" class="font-bold text-sky-500">Dandi</a>
+    <header
+      class="fixed z-10 flex w-screen justify-between p-4 sm:px-8"
+      id="header"
+    >
+      <a href="#" class="font-bold text-sky-500 sm:text-xl">Dandi</a>
 
       <nav
         class="fixed inset-0 -translate-y-full bg-white/30 p-5 backdrop-blur-md transition-transform"
         id="menu"
       >
         <ul class="flex h-full flex-col justify-center gap-y-5 text-center">
-          <li><a href="#home" class="hover:text-sky-400">Home</a></li>
-          <li><a href="#projects" class="hover:text-sky-400">Projects</a></li>
-          <li><a href="#skills" class="hover:text-sky-400">Skills</a></li>
+          <li>
+            <a href="#home" class="hover:text-sky-400 sm:text-xl">Home</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-sky-400 sm:text-xl"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-sky-400 sm:text-xl">Skills</a>
+          </li>
           <li>
             <a
               href="#contact"
-              class="inline-block rounded-md bg-linear-to-r from-sky-300 to-teal-200 px-4 py-2 text-white transition-transform hover:scale-105"
+              class="inline-block rounded-md bg-linear-to-r from-sky-300 to-teal-200 px-4 py-2 text-white transition-transform hover:scale-105 sm:text-xl"
               >Get In Touch</a
             >
           </li>
@@ -55,13 +66,13 @@
       <div class="flex gap-2">
         <!-- Theme -->
         <i
-          class="ri-sun-line cursor-pointer hover:text-sky-500"
+          class="ri-sun-line cursor-pointer hover:text-sky-500 sm:text-xl"
           id="theme-button"
         ></i>
 
         <!-- Menu -->
         <i
-          class="ri-menu-fill cursor-pointer hover:text-sky-500"
+          class="ri-menu-fill cursor-pointer hover:text-sky-500 sm:text-xl"
           id="menu-button"
         ></i>
       </div>
@@ -75,28 +86,32 @@
         class="flex h-screen flex-col items-center justify-center gap-6"
       >
         <div
-          class="flex h-34 w-34 items-center justify-center rounded-full bg-linear-to-r from-sky-300 to-teal-200 shadow-lg shadow-sky-500/30"
+          class="flex h-34 w-34 items-center justify-center rounded-full bg-linear-to-r from-sky-300 to-teal-200 shadow-lg shadow-sky-500/30 sm:h-50 sm:w-50"
         >
           <img
             src="src/img/avatar.webp"
             alt="Dandi"
-            class="w-30 rounded-full"
+            class="w-30 rounded-full sm:w-44"
           />
         </div>
 
         <div class="text-center">
-          <h1>Hi, I'm <span class="font-bold text-sky-500">Dandi</span></h1>
-          <h2 class="text-lg">Front-End Developer</h2>
+          <h1 class="sm:text-xl">
+            Hi, I'm <span class="font-bold text-sky-500">Dandi</span>
+          </h1>
+          <h2 class="text-lg sm:text-2xl">Front-End Developer</h2>
           <div class="mt-4 mb-2 flex gap-x-2">
             <a
               href="#contact"
-              class="group rounded-lg bg-sky-500 px-3 py-2 text-sm text-white shadow-lg shadow-sky-500/30"
+              class="group rounded-lg bg-sky-500 px-3 py-2 text-sm text-white shadow-lg shadow-sky-500/30 sm:text-lg"
               >Hire Me
               <i
                 class="ri-arrow-right-line inline-block transition-transform group-hover:translate-x-0.5"
               ></i
             ></a>
-            <a href="" class="group rounded-lg border px-3 py-2 text-sm"
+            <a
+              href=""
+              class="group rounded-lg border px-3 py-2 text-sm sm:text-lg"
               >My CV
               <i
                 class="ri-download-line inline-block group-hover:translate-y-0.5"
@@ -105,10 +120,18 @@
           </div>
 
           <div>
-            <i class="ri-instagram-line text-lg hover:text-sky-400"></i>
-            <i class="ri-linkedin-box-fill text-lg hover:text-sky-400"></i>
-            <i class="ri-youtube-line text-lg hover:text-sky-400"></i>
-            <i class="ri-github-fill text-lg hover:text-sky-400"></i>
+            <i
+              class="ri-instagram-line text-lg hover:text-sky-400 sm:text-2xl"
+            ></i>
+            <i
+              class="ri-linkedin-box-fill text-lg hover:text-sky-400 sm:text-2xl"
+            ></i>
+            <i
+              class="ri-youtube-line text-lg hover:text-sky-400 sm:text-2xl"
+            ></i>
+            <i
+              class="ri-github-fill text-lg hover:text-sky-400 sm:text-2xl"
+            ></i>
           </div>
         </div>
 
@@ -118,14 +141,14 @@
       </section>
 
       <!--- ==================== PROJECTS ===================== -->
-      <section id="projects" class="px-4 py-10">
+      <section id="projects" class="px-4 py-10 sm:px-8">
         <h2
           class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500"
         >
           Projects
         </h2>
 
-        <div class="mt-10 grid grid-cols-1 gap-6">
+        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div class="group rounded-xl border border-slate-200 p-4 shadow-md">
             <img
               src="src/img/project1.webp"
@@ -218,14 +241,14 @@
       </section>
 
       <!--- ==================== SKILLS ===================== -->
-      <section id="skills" class="px-4 py-10">
+      <section id="skills" class="px-4 py-10 sm:px-8">
         <h2
           class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500"
         >
           Skills
         </h2>
 
-        <div class="mt-10 grid grid-cols-1 gap-8">
+        <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-4">
           <div class="flex flex-col gap-y-4">
             <h3 class="font-semibold">Programming</h3>
             <div class="flex items-center justify-between gap-4">
@@ -329,14 +352,18 @@
       </section>
 
       <!--- ==================== CONTACT ===================== -->
-      <section id="contact" class="px-4 py-10">
+      <section id="contact" class="px-4 py-10 sm:px-8">
         <h2
           class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500"
         >
           Contact
         </h2>
 
-        <form action="#" method="post" class="mt-10 flex flex-col gap-4">
+        <form
+          action="#"
+          method="post"
+          class="mx-auto mt-10 flex flex-col gap-4 sm:w-3/4"
+        >
           <div class="flex gap-4">
             <input
               type="text"
