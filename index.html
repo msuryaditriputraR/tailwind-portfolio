@@ -26,16 +26,20 @@
   <body class="font-poppins">
     <!--- ==================== HEADER ===================== -->
     <header
-      class="fixed z-10 flex w-screen justify-between p-4 sm:px-8"
+      class="fixed z-10 flex w-screen items-center justify-between p-4 sm:px-8 lg:px-16 lg:py-0"
       id="header"
     >
-      <a href="#" class="font-bold text-sky-500 sm:text-xl">Dandi</a>
+      <a href="#" class="font-bold text-sky-500 sm:text-xl lg:text-2xl"
+        >Dandi</a
+      >
 
       <nav
-        class="fixed inset-0 -translate-y-full bg-white/30 p-5 backdrop-blur-md transition-transform"
+        class="fixed inset-0 -translate-y-full bg-white/30 p-5 backdrop-blur-md transition-transform lg:static lg:ml-auto lg:translate-y-0 lg:bg-transparent lg:backdrop-blur-none"
         id="menu"
       >
-        <ul class="flex h-full flex-col justify-center gap-y-5 text-center">
+        <ul
+          class="flex h-full flex-col justify-center gap-5 text-center lg:flex-row lg:items-center"
+        >
           <li>
             <a href="#home" class="hover:text-sky-400 sm:text-xl">Home</a>
           </li>
@@ -58,7 +62,7 @@
 
         <!-- Close Menu -->
         <i
-          class="ri-close-line absolute top-6 right-6 cursor-pointer text-3xl"
+          class="ri-close-line absolute top-6 right-6 cursor-pointer text-3xl lg:hidden"
           id="close-button"
         ></i>
       </nav>
@@ -72,7 +76,7 @@
 
         <!-- Menu -->
         <i
-          class="ri-menu-fill cursor-pointer hover:text-sky-500 sm:text-xl"
+          class="ri-menu-fill cursor-pointer hover:text-sky-500 sm:text-xl lg:hidden"
           id="menu-button"
         ></i>
       </div>
@@ -83,24 +87,24 @@
       <!--- ==================== HOME ===================== -->
       <section
         id="home"
-        class="flex h-screen flex-col items-center justify-center gap-6"
+        class="flex h-screen flex-col items-center justify-center gap-6 lg:flex-row lg:gap-x-20"
       >
         <div
-          class="flex h-34 w-34 items-center justify-center rounded-full bg-linear-to-r from-sky-300 to-teal-200 shadow-lg shadow-sky-500/30 sm:h-50 sm:w-50"
+          class="flex h-34 w-34 items-center justify-center rounded-full bg-linear-to-r from-sky-300 to-teal-200 shadow-lg shadow-sky-500/30 sm:h-50 sm:w-50 lg:order-1 lg:h-[335px] lg:w-[335px] lg:shadow-xl"
         >
           <img
             src="src/img/avatar.webp"
             alt="Dandi"
-            class="w-30 rounded-full sm:w-44"
+            class="w-30 rounded-full sm:w-44 lg:w-80"
           />
         </div>
 
-        <div class="text-center">
-          <h1 class="sm:text-xl">
+        <div class="text-center lg:text-left">
+          <h1 class="sm:text-xl lg:mb-1 lg:text-4xl">
             Hi, I'm <span class="font-bold text-sky-500">Dandi</span>
           </h1>
-          <h2 class="text-lg sm:text-2xl">Front-End Developer</h2>
-          <div class="mt-4 mb-2 flex gap-x-2">
+          <h2 class="text-lg sm:text-2xl lg:text-5xl">Front-End Developer</h2>
+          <div class="mt-4 mb-2 flex gap-x-2 lg:mt-6 lg:mb-4">
             <a
               href="#contact"
               class="group rounded-lg bg-sky-500 px-3 py-2 text-sm text-white shadow-lg shadow-sky-500/30 sm:text-lg"
@@ -141,14 +145,14 @@
       </section>
 
       <!--- ==================== PROJECTS ===================== -->
-      <section id="projects" class="px-4 py-10 sm:px-8">
+      <section id="projects" class="px-4 py-10 sm:px-8 lg:px-16">
         <h2
-          class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500"
+          class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500 sm:text-lg lg:text-2xl"
         >
           Projects
         </h2>
 
-        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div class="group rounded-xl border border-slate-200 p-4 shadow-md">
             <img
               src="src/img/project1.webp"
@@ -241,14 +245,16 @@
       </section>
 
       <!--- ==================== SKILLS ===================== -->
-      <section id="skills" class="px-4 py-10 sm:px-8">
+      <section id="skills" class="px-4 py-10 sm:px-8 lg:px-16">
         <h2
-          class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500"
+          class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500 sm:text-lg lg:text-2xl"
         >
           Skills
         </h2>
 
-        <div class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-4">
+        <div
+          class="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-4 lg:mx-auto lg:w-3/4 lg:gap-8"
+        >
           <div class="flex flex-col gap-y-4">
             <h3 class="font-semibold">Programming</h3>
             <div class="flex items-center justify-between gap-4">
@@ -352,9 +358,9 @@
       </section>
 
       <!--- ==================== CONTACT ===================== -->
-      <section id="contact" class="px-4 py-10 sm:px-8">
+      <section id="contact" class="px-4 py-10 sm:px-8 lg:px-16">
         <h2
-          class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500"
+          class="relative mx-auto w-fit font-bold tracking-wider uppercase after:absolute after:-bottom-1 after:left-1/2 after:h-1 after:w-1/2 after:-translate-1/2 after:rounded-md after:bg-sky-500 sm:text-lg lg:text-2xl"
         >
           Contact
         </h2>
@@ -362,7 +368,7 @@
         <form
           action="#"
           method="post"
-          class="mx-auto mt-10 flex flex-col gap-4 sm:w-3/4"
+          class="mx-auto mt-10 flex flex-col gap-4 sm:w-3/4 lg:w-1/2"
         >
           <div class="flex gap-4">
             <input
