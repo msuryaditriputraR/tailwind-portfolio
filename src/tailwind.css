@@ -6,3 +6,7 @@
 @theme {
   --font-poppins: "Poppins", serif;
 }
+
+.active-menu {
+  @apply translate-y-0;
+}
