@@ -25,12 +25,15 @@
     --color-purple-400: oklch(0.714 0.203 305.504);
     --color-fuchsia-400: oklch(0.74 0.238 322.16);
     --color-pink-400: oklch(0.718 0.202 349.761);
+    --color-rose-500: oklch(0.645 0.246 16.439);
     --color-slate-200: oklch(0.929 0.013 255.508);
     --color-slate-300: oklch(0.869 0.022 252.894);
     --color-slate-400: oklch(0.704 0.04 256.788);
     --color-slate-500: oklch(0.554 0.046 257.417);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -298,6 +301,9 @@
   .h-screen {
     height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -345,6 +351,9 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .flex-1 {
+    flex: 1;
   }
   .flex-1\/2 {
     flex: calc(1/2 * 100%);
@@ -439,6 +448,9 @@
   }
   .border-slate-300 {
     border-color: var(--color-slate-300);
+  }
+  .border-t-slate-300 {
+    border-top-color: var(--color-slate-300);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -607,6 +619,10 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -618,6 +634,9 @@
   .tracking-wider {
     --tw-tracking: var(--tracking-wider);
     letter-spacing: var(--tracking-wider);
+  }
+  .text-rose-500 {
+    color: var(--color-rose-500);
   }
   .text-sky-400 {
     color: var(--color-sky-400);
@@ -636,6 +655,15 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .decoration-dashed {
+    text-decoration-style: dashed;
+  }
+  .decoration-2 {
+    text-decoration-thickness: 2px;
+  }
+  .underline-offset-2 {
+    text-underline-offset: 2px;
   }
   .opacity-0 {
     opacity: 0%;
